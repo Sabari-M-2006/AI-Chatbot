@@ -8,7 +8,7 @@ import ChatInput from "./components/ChatInput";
 export default function Page() {
   const [messages, setMessages] = useState<UIMessage[]>([]);
   const [input, setInput] = useState("");
-  const [g, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
